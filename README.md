@@ -16,7 +16,7 @@ Key contributions lie in ​significantly optimizing​ the computationally inte
 | ​**Model Compression & Accelerated Inference**​  | Applied ​Structured Channel Pruning. Deployed optimized engine via ​TensorRT-LLM. |
 
 ## Getting Started (Quick Setup)
-1. Place your `.npy` datasets under `data/pretrain/` and `data/finetune/`.
+1. Place datasets under `data/pretrain/` and `data/finetune/`.
 2. Adjust any hyperparameters in `src/config.py`.
 3. Install dependencies:
     ```bash
