@@ -16,17 +16,23 @@ Key contributions lie in ​significantly optimizing​ the computationally inte
 | ​**Model Compression & Accelerated Inference**​  | Applied ​Structured Channel Pruning. Deployed optimized engine via ​TensorRT-LLM. |
 
 ## Getting Started (Quick Setup)
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Pretraining (multi-GPU)
-torchrun --nproc_per_node=2 pretrain/train_fsdp.py
-
-# Fine-tuning tasks
-python finetune/driver_id/finetune.py
-python finetune/passenger_status/finetune.py
-
-# Model compression
-python utils/pruning.py --model vit.pt
-python utils/inference_optimizer.py
+1. Place your `.npy` datasets under `data/pretrain/` and `data/finetune/`.
+2. Adjust any hyperparameters in `src/config.py`.
+3. Install dependencies:
+    ```bash
+    # Install dependencies
+    pip install -r requirements.txt
+    ```
+4. Run pretraining:
+    ```bash
+    python src/train/pretrain.py
+    ```
+5. Run fine-tuning (choose task)
+    ```bash
+    python src/train/finetune.py --task driver
+    python src/train/finetune.py --task status
+    ```
+6. Prune & build TensorRT engine:
+    ```bash
+    python src/prune_infer.py
+    ```
