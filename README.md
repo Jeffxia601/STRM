@@ -20,7 +20,6 @@ Key contributions lie in ​significantly optimizing​ the computationally inte
 2. Adjust any hyperparameters in `src/config.py`.
 3. Install dependencies:
     ```bash
-    # Install dependencies
     pip install -r requirements.txt
     ```
 4. Run pretraining:
