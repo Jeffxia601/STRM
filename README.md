@@ -1,4 +1,4 @@
-# Efficient Pretraining & Fine-Tuning of a Large Spatio-Temporal Vision Transformer (ViT-1.2B)
+# Efficient Pretraining & Fine-Tuning of a Large Spatio-Temporal Reasoning Model (STRM, ViT-1.2B)
 ​**Jan 2024 - May 2024**​ | `PyTorch` • `FSDP` • `Parallel Adapter` • `Structured Pruning` • `TensorRT-LLM` | Python 3.11.5  
 
 ### Large-Scale Spatio-Temporal Modeling for Trajectory Intelligence
