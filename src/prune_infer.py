@@ -47,7 +47,7 @@ def convert_to_trt(model, engine_path, example_input):
 
 
 def main():
-    set_seed(42)
+    set_seed()
     cfg = CONFIG
     paths = cfg['paths']
     engine_path = cfg['infer']['tensorrt_engine_path']

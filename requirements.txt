@@ -1,6 +1,5 @@
 # Python 3.11.5
 torch==2.1.2
-torchvision==0.16.2
 pyyaml==6.0.1
 fairscale==0.4.13
 accelerate==0.28.0

@@ -14,7 +14,7 @@ def main():
     cfg = CONFIG['pretrain']
     paths = CONFIG['paths']
 
-    set_seed(42)
+    set_seed()
     logger = init_logger('pretrain')
     writer = SummaryWriter(log_dir=os.path.join(paths['save_dir'], 'logs', 'pretrain'))
 

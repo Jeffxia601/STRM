@@ -15,7 +15,7 @@ def main(task='driver'):
     cfg = CONFIG['finetune']
     paths = CONFIG['paths']
 
-    set_seed(42)
+    set_seed()
     logger = init_logger(f'finetune_{task}')
     writer = SummaryWriter(log_dir=os.path.join(paths['save_dir'], 'logs', f'finetune_{task}'))
 
